@@ -46,7 +46,16 @@ int main()
                 printf("%d\t|\t ", MatrixA[i][j]);
             }
         }
-       
+        printf("\nLA MATRIZ RESULTANTE ES:\n");
+        for (int i = 0; i < n; i++)
+        {
+            printf("\n");
+            for (int j = 0; j < m; j++)
+            {
+                MatrixB[i][j] = Matrix[i][j] + MatrixA[i][j];
+                printf("%d\t|\t ", MatrixB[i][j]);
+            }
+        }
     }
 
     return 0;
