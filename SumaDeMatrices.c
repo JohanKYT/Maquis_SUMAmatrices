@@ -36,7 +36,17 @@ int main()
                 printf("%d\t|\t ", Matrix[i][j]);
             }
         }
-        
+        printf("\nLA MATRIZ 2 ES:\n");
+        for (int i = 0; i < o; i++)
+        {
+            printf("\n");
+            for (int j = 0; j < p; j++)
+            {
+                MatrixA[i][j] = rand() % 100 + 1;
+                printf("%d\t|\t ", MatrixA[i][j]);
+            }
+        }
+       
     }
 
     return 0;
