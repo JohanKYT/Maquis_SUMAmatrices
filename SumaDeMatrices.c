@@ -18,7 +18,26 @@ int main()
     printf("Ingeres el numero de columnas MATRIZ 2:\n");
     scanf("%d", &p);
 
-    
+    int Matrix[n][m];
+    int MatrixA[o][p];
+    int MatrixB[n][m];
+
+    // Agregamos un if para poner una condicion donde verifique que se puede realizar el programa
+    if (MatrixA[n][m] == MatrixA[o][p])
+    {
+        printf("\nLA MATRIZ 1 ES:\n");
+        for (int i = 0; i < n; i++)
+        {
+            printf("\n");
+            for (int j = 0; j < m; j++)
+            {
+                // Usamos la funcion donde nos seleccione numeros aleatorios de o al 100
+                Matrix[i][j] = rand() % 100 + 1;
+                printf("%d\t|\t ", Matrix[i][j]);
+            }
+        }
+        
+    }
 
     return 0;
 }
